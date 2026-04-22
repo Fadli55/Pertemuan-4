@@ -7,12 +7,12 @@
 </head>
 <body>
     <h1>Challenge_24.11.6230</h1>
-    <table border="2" style="border-collapse: collapse;">
+    <table border="1">
         <tr>
             <th colspan="4" bgcolor="orange">Daftar Buku</th>
         </tr>
         <tr>
-            <td rowspan="4"><img src="https://openlibrary.telkomuniversity.ac.id/uploads/book/cover/20.21.2029.jpg" width="100" alt=""></td>
+            <td rowspan="4"><img src="https://openlibrary.telkomuniversity.ac.id/uploads/book/cover/20.21.2029.jpg" alt=""></td>
         </tr>
         <tr>
             <td>Judul</td>
@@ -30,34 +30,39 @@
             <td>John Dean</td>
         </tr>
     </table>
-    <h3>Isilah Formulir Dibawah Ini</h3>
+    <h3>Isilah Formulir Dibawah Ini</h3>   
     <form id="f1">
         <table>
         <tr>
-            <td>Nama:</td>
-            <td style="padding-left: 125px;"><input type="text" name="nama"></td>
+            <td>Nama</td>
+            <td>:</td>
+            <td><input type="text" name="nama"></td>
         </tr>
         <tr>
-            <td>Password:</td>
-            <td style="padding-left: 125px;"><input type="password" autocomplete="new-password" name="pwd"></td> </tr>
+            <td>Password</td>
+            <td>:</td>
+            <td><input type="password" name="pwd"></td> </tr>
         <tr>
-            <td>Jenis Kelamin:</td>
-            <td style="padding-left: 125px;">
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
                 <input type="radio" name="jk" value="laki"> Laki - Laki 
                 <input type="radio" name="jk" value="perempuan"> Perempuan
             </td>
         </tr>
         <tr>
-            <td>Hobi:</td>
-            <td style="padding-left: 125px;">
+            <td>Hobi</td>
+            <td>:</td>
+            <td>
                 <input type="checkbox" value="membaca"> Membaca Buku 
                 <input type="checkbox" value="nulis"> Menulis 
                 <input type="checkbox" value="mancing"> Memancing
             </td>
         </tr>
         <tr>
-            <td>Asal Kota:</td>
-            <td style="padding-left: 125px;">
+            <td>Asal Kota</td>
+            <td>:</td>
+            <td>
                 <select name="kota">
                     <option value="semarang">Semarang</option>
                     <option value="diy">DI Yogyakarta</option>
@@ -66,11 +71,16 @@
             </td>
         </tr>
         <tr>
-            <td style="vertical-align: middle;">Komentar Anda:</td>
-            <td style="padding-left: 125px;"><textarea name="komen" cols="22" rows="5" placeholder="Masukkan Pendapat Anda" style="text-align: center;"></textarea></td> </tr>
+            <td valign="top">Komentar Anda</td>
+            <td valign="top">:</td>
+            <td><textarea name="komen" cols="30" rows="3"></textarea></td> </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><button type="submit" form="f1" name="mulai">Mulai Proses!</button></td>
+        </tr>
     </table>
     </form>
     <button type="submit" form="f1" name="mulai">Mulai Proses!</button>
-
 </body>
 </html>
